@@ -1,0 +1,691 @@
+body {
+    margin: 0;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 700;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/** Sections **/
+
+.section_text {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 500;
+    color: white;
+
+    position: relative;
+
+    padding: 10px 0;
+}
+
+.section_text--black {
+    color: black;
+}
+
+.section_text:after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    top: 100%;
+    left: 0;
+
+    background-color: #215779;
+    position: absolute;
+
+    z-index: 1;
+}
+
+.section--black {
+    background-color: black;
+}
+
+.section--gray {
+    background-color: #373b4d;
+}
+
+/** Container **/
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    color: black;
+
+    vertical-align: top;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+
+    padding-top: 20px;
+    padding-bottom: 15px;
+
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    background-color: rgb(0, 0, 0);
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+
+    font-size: 40px;
+    font-weight: 300;
+    color: #3182b5;
+    margin: 10px 0;
+}
+
+.nav{
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.link{
+    position: relative;
+
+    transition: all .2s linear;
+    text-decoration: none;
+    color: #93d1ee;
+
+    margin: 0 20px 10px;
+    display: inline-block;
+}
+
+.link:after{
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+    transition: all .2s linear;
+}
+
+.link:hover{
+    color: white;
+}
+
+.link:hover:after{
+    opacity: 1;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+
+    position: relative;
+
+    transition: all 0.2s linear;
+    color: white;
+    background-color: #3182b5;
+
+    display: flex;
+
+    font-weight: 300;
+}
+
+.but_text {
+    font-size: 20px;
+    margin: auto;
+
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #3aa1e0;
+}
+
+.title_text {
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: 500;
+    color: white;
+
+    position: relative;
+}
+
+/** Section 1 **/
+.topimg {
+    position: relative;
+    display: block;
+    margin: 15px auto 40px;
+
+    width: 60%;
+    object-fit: cover;
+}
+
+.micro_container {
+    width: 50%;
+}
+
+/* Section 2 */
+.text_section2 {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    width: 60%;
+}
+.proImg {
+    object-fit: cover;
+    width: 40%;
+}
+
+/* Gallery */
+
+.gallery_item {
+    display: table;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 0;
+}
+
+.gallery_photo {
+    width: 40%;
+
+    display: block;
+
+    position: relative;
+}
+.gallery_photo--left {
+    float: left;
+}
+.gallery_photo--right {
+    float: right;
+}
+
+.gallery_text {
+    width: 50%;
+    font-size: 20px;
+    font-weight: 400;
+    
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    color: white;
+}
+.gallery_text--left {
+    float: left;
+}
+.gallery_text--right {
+    float: right;
+}
+
+/* Pluses Table */
+.pluses {
+    padding-top: 20px;
+    width: 100%;
+    align-items: center;
+
+    display: inline-block;
+}
+
+.pluses_item {
+    color: #959596;
+    font-weight: 500;
+    font-size: 20px;
+
+    position: static;
+    display: inline-flex;
+    width: 33%;
+
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.pluses_icon {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.pluses_text {
+    margin: auto 0;
+}
+
+/* Form */
+.form_box {
+    display: flex;
+    font-size: 18px;
+}
+
+.form {
+    width: 50%;
+    margin: auto;
+    padding: 20px 0;
+    padding-left: 20px;
+}
+.form_item {
+    display: block;
+    width: 96%;
+    height: 35px;
+    margin: 10px 0;
+}
+
+.form_star {
+    color: red;
+    margin: auto;
+    cursor: default;
+}
+
+.form_error {
+    color: red;
+    margin: 5px 0;
+    cursor: default;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    height: 60px;
+}
+
+.footer_text {
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.social {
+    float: right;
+}
+.social a {
+    margin-left: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Timer */
+.timer_box {
+    margin: auto;
+    margin-top: 40px;
+
+    width: 620px;
+    height: 220px;
+    border: 10px outset #005183;
+    border-radius: 20px;
+
+    cursor: default;
+}
+
+.timer_head {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(100, 0, 0);
+
+    text-align: center;
+}
+
+.timer {
+    width: 60%;
+    font-size: 30px;
+    font-weight: bold;
+
+    position: relative;
+    display: flex;
+    height: 100px;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.circle_box {
+    display: inline-block;
+    width: 100px;
+}
+
+.timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+.timer__path-elapsed {
+    width: 100px;
+    stroke-width: 7px;
+    stroke: grey;
+}
+
+.base-timer__path-remaining {
+    color: rgb(67, 34, 255);
+
+    /* Такая же ширина, что и у исходного кольца */
+    stroke-width: 7px;
+
+    /* Замыкаем концы линии, чтобы создать круг */
+    stroke-linecap: round;
+
+    /* Делаем так, чтобы анимация начиналась вверху */
+    transform: rotate(90deg);
+    transform-origin: center;
+
+    /* Одна секунда подгоняется под таймер обратного отсчета */
+    transition: 1s linear all;
+
+    /* Задаем смену цвета кольца, когда обновляется значение цвета */
+    stroke: currentColor;
+}
+
+.timer__svg {
+    /* Переворачиваем кольцо и задаем движение анимации слева направо */
+    transform: scaleX(-1);
+}
+
+.timer__label {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgb(100, 0, 0);
+}
+
+/* Timer Top */
+.timer_top {
+    text-align: center;
+    display: inline-flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgb(208, 234, 255);
+    z-index: 2;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.timer_top-head {
+    display: inline-flex;
+    position: static;
+    margin: auto 0;
+
+    font-weight: bold;
+    color: rgb(27, 0, 0);
+}
+
+.prices {
+    margin-left: 10px;
+    display: block;
+    flex-flow: column;
+}
+
+.timer_top-nums {
+    width: 30%;
+    margin: auto 0;
+    display: inline-block;
+}
+
+.timer_top-box {
+    background-color: black;
+    width: 40px;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.timer_top-num {
+    color: white;
+    margin: auto;
+    font-weight: 700;
+}
+.timer_top-time {
+    display: inline-flex;
+    margin: 5px;
+}
+
+/* Buy button */
+.buy_button {
+    width: 120px;
+    height: 55px;
+    cursor: pointer;
+    position: relative;
+
+    color: black;
+    background-color: gold;
+    border-radius: 5px;
+
+    font-weight: bold;
+    margin: auto 0;
+}
+.buy_but_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+    .timer_top {
+        font-size: 20px;
+    }
+    .timer_top-nums {
+        font-size: 25px;
+        width: 38%;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        padding: 0;
+        height: 85px;
+    }
+
+    .timer_top {
+        font-size: 18px;
+    }
+    .timer_top-box {
+        width: 28px;
+    }
+
+    .button {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .buy_button {
+        width: 80px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .topimg {
+        width: 100%;
+    }
+    .title_text {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .inner--section1 {
+        flex-flow: column;
+    }
+
+    /* Section 2*/
+    .section_text {
+        font-size: 50px;
+    }
+    .text_section2 {
+        margin-top: 10px;
+    }
+
+    /* Section 3 */
+    .gallery_photo {
+        float: none;
+        margin: 0 auto;
+
+        width: 65%;
+    }
+    .gallery_text {
+        width: 90%;
+        float: none;
+        position: static;
+        justify-content: center;
+    }
+
+    .pluses_item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 750px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    /* Timer */
+    .timer_top {
+        font-size: 14px;
+    }
+    .timer_top-head {
+        font-size: 12px;
+        position: static;
+        align-items: center;
+    }
+    .timer_top-nums {
+        font-size: 18px;
+        width: 30%;
+    }
+    .timer_top-box {
+        margin-left: 2px;
+        width: 24px;
+        height: 32px;
+    }
+    .prices {
+        margin-left: 3px;
+    }
+    .timer_top-time {
+        display: inline-flex;
+        margin: 1px;
+    }
+
+    .button {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .buy_button {
+        width: 70px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    /* Section 1 */
+    .section_text {
+        font-size: 30px;
+    }
+    .text_section2 {
+        font-size: 16px;
+    }
+    .proImg {
+        width: 70%;
+    }
+
+    /* Section Gallary */
+    .gallery_text {
+        font-size: 16px;
+    }
+
+    .pluses_item {
+        width: 100%;
+    }
+
+    /* Section Form */
+    .form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 550px) {
+    /* Header */
+    .header{
+        height: 50px;
+    }
+    .logo{
+        margin: 5px 0;
+    }
+
+    /* Timer */
+    .timer_top{
+        height: 50px;
+    }
+    .timer_top-head {
+        font-size: 11px;
+    }
+    .timer_top-nums {
+        font-size: 12px;
+        width: auto;
+        margin: auto;
+    }
+    .text_section2 {
+        width: 90%;
+    }
+    .timer_top-box {
+        margin-left: 1px;
+        width: 14px;
+        height: 20px;
+    }
+    .prices {
+        margin-left: 2px;
+    }
+
+    .buy_button {
+        width: 50px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    /* Gallery */
+    .section_text{
+        padding: 0;
+    }
+    .gallery_item{
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .timer_top-head {
+        font-size: 9px;
+    }
+}

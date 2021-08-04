@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204042526-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-204042526-1');
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="yandex-verification" content="7919857a06d7ed8a" />
+
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    ntegrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
+    rel="stylesheet">
+    
+    <link rel="shortcut icon" href="assets/images/logo.svg" type="svg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Наушники AirPods 2 по скидке!</title>
+</head>
+
+<body>
+    <header class="header"></header>
+
+    <!-- Первая секция -->
+    <section class="section section--black">
+        <div class="container">
+            <div class="inner inner--section1">
+                <div class="micro_container">
+                    <img src="assets/images/1.png" class="topimg">
+                </div>
+                <div class="micro_container">
+                    <div class="title_text">
+                        НАСТОЯЩЕЕ
+                        <br>ЗВУЧАНИЕ
+                    </div>
+                    <div class="button" onclick="scrollClick()">
+                        <div class="but_text">
+                            Заказать
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"></footer>
+
+    <script src="assets/js/timer.js"></script>
+    <script src="assets/js/clicks.js"></script>
+    <script src="assets/js/load.js"></script>    
+    <script>
+        $.get('header.html', function(data) { $('.header').html(data); });
+        $.get('footer.html', function(data) { $('.footer').html(data); });
+    </script>
+</body>
+
+</html>
